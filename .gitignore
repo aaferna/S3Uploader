@@ -74,3 +74,6 @@ typings/
 
 # FuseBox cache
 .fusebox/
+*.exe
+s3uploader-linux
+s3uploader-macos

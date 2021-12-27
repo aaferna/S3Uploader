@@ -1,0 +1,27 @@
+{
+  "name": "s3uploader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "bin": "main.js",
+  "scripts": {
+    "test": "node main.js dev",
+    "compile": "pkg ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gusgeek/S3Uploader.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/gusgeek/S3Uploader/issues"
+  },
+  "homepage": "https://github.com/gusgeek/S3Uploader#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1048.0",
+    "chokidar": "^3.5.2",
+    "loggering": "^3.0.1"
+  },
+  "devDependencies": {}
+}
