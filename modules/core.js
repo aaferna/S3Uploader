@@ -13,7 +13,7 @@ exports.ControllerFile = (file) => {
         let sizeInit = 0
         timer = setInterval(() =>{
             stat(file, (err, stats) =>{
-              
+
               if(err){
                 loggering('system', {file: file, msg: err}, logdir)
                 timerClose() 
@@ -59,9 +59,9 @@ exports.awsUpload = (file, tagging = "", storageType) =>{
         if (data){
 
           let s3 = new AWS.S3({
-              accessKeyId: CONFIGFile.awsKey,
-              secretAccessKey: CONFIGFile.awsAccessKey
-          })
+                  accessKeyId: CONFIGFile.awsKey,
+                  secretAccessKey: CONFIGFile.awsAccessKey
+              })
 
           s3res = s3.upload ({
               Bucket: CONFIGFile.awsBucket,
@@ -78,6 +78,7 @@ exports.awsUpload = (file, tagging = "", storageType) =>{
               loggering('system', {err: `el proceso de subida de archivos a S3 se detuvo abruptamente para el archivo ${file}`, msg: err}), logdir
               reject()
             }
+
             else {
               if (devflg) console.log({
                     status: true,
