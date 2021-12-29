@@ -37,13 +37,21 @@ El `storageType` es el tipo de almacenamiento que quiere darle a los archivos de
 - DEEP_ARCHIVE
 - OUTPOSTS
 - GLACIER_IR
+<br>
 
-## Logs
+## 
+<br>
+
+### Logs
 Se encontraran en < Directorio de la App >/log donde se encontraran dos tipos de carpetas `error` y `upload`, donde se especificara en cada uno el movimiento de los registros que se concretan por día.
 
 ### Advertencia
 
 - Por una cuestion de comportamiento desde el lado de Amazon con su SDK, todo archivo con caracteres extraños en su nombre debe ser tratado. Por tal, aquel que disponga de caracteres extraños se reemplazara con un "_".
+
+
+### Flags
+- <ejecutable> `verbose` nos mostrara en consola los movimientos que va generando el aplicativo en paralelo al registro global
 
 ### Release Notes
 
